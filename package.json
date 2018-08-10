@@ -1,0 +1,21 @@
+{
+  "name": "daikin-server",
+  "version": "0.0.1",
+  "description": "An api server for controlling a Daikin Air Conditioner via RasPi + IR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Camillo Addis",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "node-cmd": "^3.0.0",
+    "node-dht-sensor": "0.0.34",
+    "node-persist": "^3.0.1",
+    "node-schedule": "^1.3.0",
+    "pigpio-client": "^1.0.3"
+  }
+}
