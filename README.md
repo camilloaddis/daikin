@@ -15,6 +15,7 @@ Check out what this is about [on Medium](https://medium.com/@camilloaddis/smart-
 * `cd daikin`
 * `npm install`
 * `cd controller`
+* again, `npm install`
 * create a `.env.development.local` file and add this line to it: `VUE_APP_API_URL=http://192.168.100.100:3000` (change the address with the local address of your RasPi, which should have a dedicated IP).
 * as before create a `.env.production.local` file with the same line but with the remote server address (or the same address if you're using it only locally)
 
