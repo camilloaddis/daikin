@@ -10,8 +10,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "chart.js": "^2.7.2",
-    "lodash": "^4.17.10",
-    "node-sass": "^4.9.0",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
     "tinycolor2": "^1.4.1",
     "vue": "^2.5.16",
     "vue-axios": "^2.1.1",
@@ -23,9 +23,9 @@
     "vue2-touch-events": "^1.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.10",
-    "@vue/cli-plugin-eslint": "^3.0.0-beta.10",
-    "@vue/cli-service": "^3.0.0-beta.10",
+    "@vue/cli-plugin-babel": "^3.5.4",
+    "@vue/cli-plugin-eslint": "^3.5.1",
+    "@vue/cli-service": "^3.5.3",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.13"
   },

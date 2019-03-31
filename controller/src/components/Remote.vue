@@ -11,7 +11,7 @@
       <h1><span @click="setTemp(-1)" class="arrow down"></span>{{settings.temp}} °C<span @click="setTemp(1)" class="arrow up"></span></h1>
       <ul class="fan-speeds"><li v-for="(speed, k) in constants.fanSpeeds" :class="['fan'+speed, {'active': settings.fanSpeed === k}]" :key="k" @click="setSpeed(k)">{{speed}}</li></ul>
     </div>
-    <v-touch :class="{'open':footerOpened}" id="footer" @press="setBottom($event)" @pan="openFooter($event)" :options="{treshold:0, pointers:0}">
+    <v-touch :class="{'open':true}" id="footer">
       <div :class="{'btn':true, 'active':settings.power}" @click="setSetting('power','power', !settings.power)" ><img src="icons/i_power.png" class="icon" alt=""></div>
 
       <div :class="{'btn':true, 'active':settings.mode === 'auto'}" @click="setSetting('mode', 'mode', 'auto')" ><img src="icons/i_auto.png" class="icon" alt=""></div>
@@ -73,10 +73,8 @@ export default {
       }, 800),
     setBottom(e){
       this.footerBottom = window.innerHeight - e.target.offsetTop - e.target.clientHeight;
-      console.log(this.footerBottom);
     },
     openFooter (e){
-      // console.log(e);
       let f = document.getElementById('footer');
       if(this.footerBottom === null){
         this.setBottom(e);
